@@ -494,4 +494,3 @@ double matrixTrace(double** matrix, int size){
     }
     return result; 
 }
-Add matrix.c implementation to src/
