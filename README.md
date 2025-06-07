@@ -64,7 +64,7 @@ double** createMatrix(int N, int M) {
 }
 ```
 
-**Supported Operations:***
+#### Supported Operations:
 - `double** addMatrices(double** matrixA, double** matrixB, int rows, int cols);`  
     Performs matrix addition of `matrixA` and `matrixB` with identical dimensions.  
     Returns the resulting matrix on success; otherwise, returns an error code.
@@ -93,7 +93,7 @@ double** createMatrix(int N, int M) {
 - `double matrixTrace(double** matrix, int size);`  
     Computes the trace (sum of diagonal elements) of a square matrix.  
     Returns the result as a `double`.
-**Error Codes:**
+#### Error Codes:
 - `EINVAL` — invalid arguments (e.g. mismatched matrix dimensions)
 - `ENOMEM` — memory allocation failure
 # Инструкция для пользователей (Ru)
@@ -161,7 +161,7 @@ double** createMatrix(int N, int M) {
 }
 **
 ```
-**Возможности библиотеки:**
+#### Возможности библиотеки:
 - Функция  ```double** addMatrices(double** matrixA, double** matrixB, int rows, int cols);``` производит матричное сложение двух матриц - матрицы А и матрицы В с одинаковым количеством строк rows и столбцов cols. В случае успеха возвращает результирующую матрицу. В случае неудачи возвращает один из двух кодов ошибки, описанных ниже.
 - Функция ```double** transposeMatrix(double** matrix, int rows, int cols);``` производит транспонирование матрицы с количеством строк rows и количеством столбцов cols. В случае успеха возвращает результирующую матрицу. В случае неудачи возвращает один из двух кодов ошибки, описанных ниже.
 - Функция ```double** multiplyMatrices(double** matrixA, int rowsA, int colsA, double** matrixB, int rowsB, int colsB);``` производит матричное умножение двух матриц - матрицы А (с количеством строк rowsA и количеством столбцов colsA) и матрицы В (с количеством строк rowsB и количеством столбцов colsB). В случае успеха возвращает результирующую матрицу. В случае неудачи возвращает один из двух кодов ошибки, описанных ниже.
@@ -171,7 +171,7 @@ double** createMatrix(int N, int M) {
 - Функция ```double Determinant(double** matrix, int m);``` вычисляет определитель m-ого порядка матрицы matrix. Порядок определяется следующим образом: при $m=1$ возвращается определитель размера $1 \times 1$, при $m = 2$ возвращается определитель размера $2 \times 2$ и так далее. В случае успеха возвращается число типа ```double```. В случае неудачи возвращает один из двух кодов ошибки, описанных ниже. 
 - Функция ```double** invertMatrix(double** mas, int m);``` вычисляет обратную матрицу к матрице mas, размера m.  В случае успеха возвращает результирующую матрицу. В случае неудачи возвращает один из двух кодов ошибки, описанных ниже. 
 - Функция ```double matrixTrace(double** matrix, int size);``` вычисляет след матрицы matrix размера size. След - это сумма элементов на главной диагонали. В случае успеха возвращается число типа ```double```. В случае неудачи возвращает один из двух кодов ошибки, описанных ниже. 
-**Коды ошибок**: 
+#### Коды ошибок: 
 - При ошибке, связанной с некорректными аргументами, переданными в функцию, вернётся код ошибки ```EINVAL```
 - При ошибке, связанной с невозможностью выделить память, вернётся код ошибки ```ENOMEM``` 
 
