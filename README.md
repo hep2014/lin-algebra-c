@@ -5,7 +5,7 @@ This project implements basic matrix operations in the C programming language. Y
 ## Installation Instructions
 To build and use the library, you need a C compiler (`gcc`) and `make`.
 **Local Build (without installation)**
-```bash
+```
 git clone https://github.com/hep2014/lin-algebra-c.git
 cd lin-algebra-c
 make
@@ -41,7 +41,7 @@ sudo make uninstall
 
 The library operates on objects of type `double**` — an array of pointers to matrix rows, each containing `double` values.  
 **Note:** The library does not provide a built-in matrix creation function. You should create matrices manually or use a helper function like the one below:
-```c
+```
 double** createMatrix(int N, int M) {
     double** temporaryMatrix = malloc(N * sizeof(double*));
     if (temporaryMatrix == NULL) {
@@ -62,7 +62,7 @@ double** createMatrix(int N, int M) {
     }
     return temporaryMatrix;
 }
-    ```
+```
 
 **Supported Operations:***
 - `double** addMatrices(double** matrixA, double** matrixB, int rows, int cols);`  
